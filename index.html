@@ -1,12 +1,226 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- website-logo -->
+    <link rel="icon" href="./assets/logo.png">
+
+    <!-- google font- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <div class="main">
+        <label for="check" id="btn" style="display: none;"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" name="" id="check" style="display: none;">
+
+
+<!-- sidebar-section -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options">
+                    <label for="check"> 
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#" ><b><label for="check">Home</label></b></a>
+                    </label>
+                </div>
+                <div class="nav-options">
+                        <i class="fa-solid fa-magnifying-glass">
+                        </i>
+                    <b> <a href="./yt/yt.html" target="_blank">Search</a></b>
+                     
+                </div>
+            </div>
+            <div class="library-section">
+                <div class="library-options">
+                    <div>
+                        <img src="./assets/library_icon.png" alt="logo">
+                        <a href="#"><b>Your Library</b></a>
+                    </div>
+                    <div class="lab-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="lib-box">
+                <div class="box b1">
+                    <div class="box-p1">
+                        <b>Create your first playlist</b>
+                    </div>
+                    <div class="box-p2">
+                        <p>it's easy, we'll help you</p>
+                    </div>
+                    <button class="badge">Create Playlist</button>
+                </div>
+                
+                <div class="box b2">
+                    <div class="box-p1">
+                        <b>Let's find some podcast to follow</b>
+                    </div>
+                    <div class="box-p2">
+                        <p>we'll keep you updated on new episode</p>
+                    </div>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+
+
+                <!-- <label for="check">
+                    <i class="fa-solid fa-xmark"></i>
+                </label> -->
+           
+                
+            </div>
+        </div>
+
+
+<!-- main-content-section -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <label for="check" id="btn"><i class="fa-solid fa-bars"></i></label>
+
+                    <img src="./assets/backward_icon.png" alt="">
+                    <img src="./assets/forward_icon.png" alt="">
+                </div>
+                
+            <div class="sticky-nav-options">     
+                <a href="https://www.spotify.com/in-en/premium/">        
+                   <button class="badge">Explore Premium</button>
+                </a>
+                
+                <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_IN&gl=US">
+                   <button class="badge" style="background-color: black; color: white;"> <i class="fa-regular fa-circle-down" style="margin-right: 10px;"></i>Install App</button>
+                </a>
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+            </div>
+
+
+         
+         
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>      
+                    
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>  
+                </div>
+
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>    
+                    
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>  
+
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>  
+
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>  
+                </div>
+            
+                <h2>Featured Charts</h2>
+                <div class="cards-container">
+
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>      
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>   
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">You daily updates your playlist and download it for offline mode..</p>
+                    </div>                 
+                </div>
+            </div>
+
+            
+
+
+        </div>
+
+
+<!-- music-player-section -->
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/card2img.jpeg" alt="" class="album-img">
+                <div style="line-height: 5px; font-size: small;">
+                    <b>Daylight</b><br><br>
+                    <p>@rohitxkoli</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-download"></i>
+            </div>
+
+            <div class="player">
+            <div class="player-control">
+                <img src="./assets/player_icon1.png" alt="" class="player-control-icons">
+                <img src="./assets/player_icon2.png" alt="" class="player-control-icons">
+                <img src="./assets/player_icon3.png" alt="" class="player-control-icons" style="width: 1.5rem; height: 1.5rem; margin-bottom: -5px;">
+                <img src="./assets/player_icon4.png" alt="" class="player-control-icons">
+                <img src="./assets/player_icon5.png" alt="" class="player-control-icons">
+            </div>
+            <div class="player-scroller">
+                <span class="curent-time">00:00</span>
+                <input type="range" name="" id="" min="0" max="100" step="1" class="process-bar">
+                <span class="total-time">3:14</span>
+            </div>
+
+            
+
+            </div>
+
+
+            <div class="controls">
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-headphones"></i>
+            </div>
+        </div>
+   
+   
+    </div> <!-- main closing div--> 
 </body>
 </html>
